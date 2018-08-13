@@ -1,6 +1,6 @@
 # LevelUp Watch Edition App Development Environment
 
-[![Build Status](https://circleci.com/gh/twlevelup/mel-2018-s2-unicorns.svg?style=svg)](https://circleci.com/gh/twlevelup/mel-2018-s2-unicorns)
+[![Build Status](https://circleci.com/gh/twlevelup/mel-2018-s2-unicorns/tree/master.svg?style=svg)](https://circleci.com/gh/twlevelup/mel-2018-s2-unicorns/tree/master)
 
 This git repo contains all the code you need to prototype apps for the watch.
 
