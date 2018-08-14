@@ -16,6 +16,7 @@ describe('TeamPage', () => {
       const page = new TeamPage();
       expect(page.template()).toContain("Priyam");
       expect(page.template()).toContain("Matt");
+      expect(page.template()).toContain("Kaia");
     });
   });
 
