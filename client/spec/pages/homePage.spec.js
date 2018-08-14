@@ -14,6 +14,9 @@ describe('HomePage', () => {
     });
   });
 
+    
+    
+    
   describe('#rightButtonEvent', () => {
     it('goes to contacts page', () => {
       const props = {
