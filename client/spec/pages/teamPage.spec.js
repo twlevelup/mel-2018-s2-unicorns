@@ -24,4 +24,30 @@ describe('TeamPage', () => {
     });
   });
 
+  describe('#leftButtonEvent', () => {
+    it('goes to home page', () => {
+      const props = {
+        navigate: () => { },
+      };
+      const page = new TeamPage(props);
+      spyOn(page, 'navigate');
+
+      page.leftButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith('/');
+    });
+  });
+
+  describe('#rightButtonEvent', () => {
+    it('goes to contacts page', () => {
+      const props = {
+        navigate: () => { },
+      };
+      const page = new TeamPage(props);
+      spyOn(page, 'navigate');
+
+      page.rightButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith('contacts');
+    });
+  });
+
 });

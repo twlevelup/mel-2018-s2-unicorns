@@ -25,7 +25,7 @@ describe('ContactsPage', () => {
   });
 
   describe('#leftButtonEvent', () => {
-    it('goes to root page', () => {
+    it('goes to team page', () => {
       const props = {
         navigate: () => { },
       };
@@ -33,6 +33,19 @@ describe('ContactsPage', () => {
       spyOn(page, 'navigate');
 
       page.leftButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith('team');
+    });
+  });
+
+  describe('#rightButtonEvent', () => {
+    it('goes to home page', () => {
+      const props = {
+        navigate: () => { },
+      };
+      const page = new ContactsPage(props);
+      spyOn(page, 'navigate');
+
+      page.rightButtonEvent();
       expect(page.navigate).toHaveBeenCalledWith('/');
     });
   });

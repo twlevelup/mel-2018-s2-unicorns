@@ -20,6 +20,10 @@ class ContactsPage extends BasePage {
   }
 
   leftButtonEvent() {
+    this.navigate('team');
+  }
+
+  rightButtonEvent() {
     this.navigate('/');
   }
 }

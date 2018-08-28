@@ -4,6 +4,14 @@ class TeamPage extends BasePage {
   template() {
     return compiledTemplate();
   }
+
+  leftButtonEvent() {
+    this.navigate('/');
+  }
+
+  rightButtonEvent() {
+    this.navigate('contacts');
+  }
 }
 
 module.exports = TeamPage;
