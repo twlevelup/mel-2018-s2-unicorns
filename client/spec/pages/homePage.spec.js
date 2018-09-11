@@ -7,12 +7,7 @@ describe('HomePage', () => {
     watchFace = document.getElementById('watch-face');
   });
 
-  describe('#template', () => {
-    it('should have a template', () => {
-      const page = new HomePage();
-      expect(page.template()).toContain("<div>Hello, World!</div>");
-    });
-  });
+
 
     
     

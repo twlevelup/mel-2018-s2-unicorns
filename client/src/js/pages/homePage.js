@@ -1,17 +1,13 @@
 require('../../styles/pages/home.scss');
-
+const moment = require("moment");
 const BasePage = require('watch-framework').BasePage;
-const logo = require('../../images/logo.png')
-const date = new Date(Date.now()).toLocaleString().split(",")[0];
-const time = new Date(Date.now()).toLocaleString().split(",")[1];
 const compiledTemplate = require("../../templates/homePage.hbs");
 
 class HomePage extends BasePage {
+
   template() {
     const context = {
-      date: date,
-      time: time,
-      logo: logo,
+      time: moment().format('LTS')
     };
     return compiledTemplate(context);
   }
