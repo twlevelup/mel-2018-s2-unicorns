@@ -17,11 +17,11 @@ class HomePage extends BasePage {
   }
 
   leftButtonEvent() {
-    this.navigate('contacts');
+    this.navigate('personal-info');
   }
 
   rightButtonEvent() {
-    this.navigate('team');
+    this.navigate('personal-info');
   }
 
   topButtonEvent() {
