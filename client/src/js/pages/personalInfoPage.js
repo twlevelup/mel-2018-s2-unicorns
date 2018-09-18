@@ -4,7 +4,7 @@ class PersonalInfoPage extends BasePage {
   template() {
     const personalInfo = {
       title: 'Personal Info',
-      attributes: ['Name: John Doe', 'Age: 80', 'Medicare Number: 1273847']
+      attributes: {'Name': 'John Doe', 'Age': 80, 'Medicare Number': 1273847}
     };
     return compiledTemplate(personalInfo);
   }

@@ -4,7 +4,7 @@ class MedicalConditionsPage extends BasePage {
   template() {
     const medicalConditions = {
       title: 'Medical Conditions',
-      attributes: ['Condition: Dementia']
+      attributes: {'Condition': 'Dementia'}
     };
     return compiledTemplate(medicalConditions);
   }
@@ -20,7 +20,7 @@ class MedicalConditionsPage extends BasePage {
   topButtonEvent() {
     this.navigate('personal-info');
   }
-  
+
   bottomButtonEvent() {
     this.navigate('medications');
   }
