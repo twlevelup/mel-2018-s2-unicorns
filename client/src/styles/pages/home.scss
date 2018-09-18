@@ -1,8 +1,18 @@
 #home {
   font-style: italic;
+  text-align: center;
+  position: absolute;
 }
 
 .clock-time {
-    
+    width: 100%;
+    height: 240px;
     font-size: 3em;
+    position: relative;
+    top: 50px;
+    font-weight: 700;
+}
+
+.date {
+    font-size: 1.5em;
 }

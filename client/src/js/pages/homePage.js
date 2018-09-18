@@ -7,6 +7,7 @@ class HomePage extends BasePage {
 
   template() {
     const context = {
+        date: moment().format("LL"),
       time: moment().format('LTS')
     };
     return compiledTemplate(context);

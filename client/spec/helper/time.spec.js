@@ -11,4 +11,15 @@ const HomePage = require('../../src/js/pages/homePage');
           const page = new HomePage();
           expect(page.template()).toContain("11:51:48 PM");
       });
+  });  
+
+  describe('date', () => {
+      beforeAll(() => {
+          Date.now = jest.fn(() => 1487076708000);
+      });
+
+      it('should have a date', () => {
+          const page = new HomePage();
+          expect(page.template()).toContain("February 14, 2017");
+      });
   });
