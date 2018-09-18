@@ -74,8 +74,14 @@ module.exports = class App {
     })
 
     this.setupEventListeners(view);
+    if (this.currInterval) {
+      clearInterval(this.currInterval);
+    }
+    console.log('debug');
     view.pageWillLoad();
     element.innerHTML = view.template();
+    const showHTML = () => {element.innerHTML = view.template();}
+    this.currInterval = setInterval(showHTML, 200);
     view.pageDidLoad();
   }
 };
