@@ -20,17 +20,17 @@ describe('PersonalInfoPage', () => {
 
     it('should have a name', () => {
       const page = new PersonalInfoPage();
-      expect(page.template()).toContain("<h2>Name");
+      expect(page.template()).toContain("Name");
     });
 
     it('should have an age', () => {
       const page = new PersonalInfoPage();
-      expect(page.template()).toContain("<h2>Age");
+      expect(page.template()).toContain("Age");
     });
 
     it('should have a medicare number', () => {
       const page = new PersonalInfoPage();
-      expect(page.template()).toContain("<h2>Medicare Number");
+      expect(page.template()).toContain("Medicare Number");
     });
 
   describe('#bottomButtonEvent', () => {
