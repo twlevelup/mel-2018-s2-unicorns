@@ -1,4 +1,4 @@
-const BreakfastPage = require('../../src/js/pages/BreakfastPage');
+const BreakfastPage = require('../../src/js/pages/breakfastPage');
 
 describe('BreakfastPage', () => {
   let watchFace;
