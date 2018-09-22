@@ -3,6 +3,7 @@ require('../styles/main.scss');
 require('../fonts/fonts.scss');
 const NotificationForm = require('./NotificationForm');
 const NotificationHub = require('./NotificationHub');
+//const time = new Date(Date.now()).toLocaleString().split(",")[1];
 
 module.exports = class App {
   constructor(routes, notifications) {
@@ -84,4 +85,5 @@ module.exports = class App {
     this.currInterval = setInterval(showHTML, 200);
     view.pageDidLoad();
   }
+
 };

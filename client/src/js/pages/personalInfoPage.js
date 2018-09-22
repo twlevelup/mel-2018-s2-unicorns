@@ -1,5 +1,7 @@
+require('../../styles/pages/home.scss');
 const BasePage = require('watch-framework').BasePage;
 const compiledTemplate = require('../../templates/personalInfoPage.hbs')
+
 class PersonalInfoPage extends BasePage {
   template() {
     const personalInfo = {
@@ -14,7 +16,7 @@ class PersonalInfoPage extends BasePage {
   }
 
   rightButtonEvent() {
-    this.navigate('/');
+    this.navigate('breakfast');
   }
 
   bottomButtonEvent() {

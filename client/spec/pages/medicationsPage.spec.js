@@ -74,7 +74,7 @@ describe('MedicationsPage', () => {
       spyOn(page, 'navigate');
 
       page.rightButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith('/');
+      expect(page.navigate).toHaveBeenCalledWith('breakfast');
     });
   });
 

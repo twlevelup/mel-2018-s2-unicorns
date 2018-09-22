@@ -34,7 +34,7 @@ describe('HomePage', () => {
       spyOn(page, 'navigate');
 
       page.leftButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith('personal-info');
+      expect(page.navigate).toHaveBeenCalledWith('breakfast');
     });
   });
 

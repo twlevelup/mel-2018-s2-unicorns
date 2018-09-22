@@ -15,7 +15,7 @@ class HomePage extends BasePage {
   }
 
   leftButtonEvent() {
-    this.navigate('personal-info');
+    this.navigate('breakfast');
   }
 
   rightButtonEvent() {
