@@ -4,7 +4,7 @@ class BreakfastPage extends BasePage {
   template() {
     const breakfastTask = {
      title: 'To Do List',
-     attributes : { 'Task': 'Eat breakfast', 'Time': '10:00A.M.'}
+     attributes : { 'Task': 'Eat breakfast', 'Time': '10:00'}
     };
     return compiledTemplate(breakfastTask);
   }

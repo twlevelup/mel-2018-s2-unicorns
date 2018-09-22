@@ -5,7 +5,7 @@ class TakeMedicationPage extends BasePage {
   template() {
     const medicationTask = {
       title: 'To Do List',
-      attributes : { 'Task': 'Take medication', 'Time': '3:00P.M.'}
+      attributes : { 'Task': 'Take medication', 'Time': '15:00'}
     };
     return compiledTemplate(medicationTask);
   }
