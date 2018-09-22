@@ -4,8 +4,8 @@ const compiledTemplate = require('../../templates/taskPage.hbs')
 class TakeMedicationPage extends BasePage {
   template() {
     const medicationTask = {
-      task: 'Take medication',
-      time: '3:00P.M.'
+      title: 'To Do List',
+      attributes : { 'Task': 'Take medication', 'Time': '3:00P.M.'}
     };
     return compiledTemplate(medicationTask);
   }

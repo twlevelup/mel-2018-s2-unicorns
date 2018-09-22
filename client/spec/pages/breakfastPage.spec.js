@@ -13,15 +13,15 @@ describe('BreakfastPage', () => {
       expect(page.template()).toContain("<h1>");
     });
 
-    it('should have a task', () => {
+    it('should have a to do list title', () => {
       const page = new BreakfastPage();
-      expect(page.template()).toContain("<h1>Eat breakfast</h1>");
+      expect(page.template()).toContain("<h1>To Do List</h1>");
     });
 
-    it('should have a time', () => {
-      const page = new BreakfastPage();
-      expect(page.template()).toContain("<h2>by 10:00A.M.</h2>");
-    });
+//    it('should have a time', () => {
+//      const page = new BreakfastPage();
+//      expect(page.template()).toContain("<h2>by 10:00A.M.</h2>");
+//    });
 
 
   describe('#topButtonEvent', () => {

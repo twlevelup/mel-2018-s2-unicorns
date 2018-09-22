@@ -13,15 +13,15 @@ describe('TakeMedicationPage', () => {
       expect(page.template()).toContain("<h1>");
     });
 
-    it('should have a task', () => {
+    it('should have a to do list title', () => {
       const page = new TakeMedicationPage();
-      expect(page.template()).toContain("<h1>Take medication</h1>");
+      expect(page.template()).toContain("<h1>To Do List</h1>");
     });
-
-    it('should have a time', () => {
-      const page = new TakeMedicationPage();
-      expect(page.template()).toContain("<h2>by 3:00P.M.</h2>");
-    });
+//
+//    it('should have a time', () => {
+//      const page = new TakeMedicationPage();
+//      expect(page.template()).toContain("<h2>by 3:00P.M.</h2>");
+//    });
 
 
 
