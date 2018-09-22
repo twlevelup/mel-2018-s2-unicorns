@@ -4,9 +4,7 @@ class MedicationsPage extends BasePage {
   template() {
     const medications = {
       title: 'Medications',
-      //attributes : ['Name: Promazine', 'Type: Antipsychotic', 'Dosage: 25mg', 'Frequency: Twice daily']
       attributes : { 'Name': 'Prozamine', 'Type': 'Antipsychotic', 'Dosage': '25mg', 'Frequency': 'Twice daily' }
-      //attributes : [{ title: 'Name', value: 'Prozamine' }, { title: 'Type', value: 'Antipsychotic' }]
     };
     return compiledTemplate(medications);
   }
