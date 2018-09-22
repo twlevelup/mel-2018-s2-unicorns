@@ -9,7 +9,7 @@ const HomePage = require('../../src/js/pages/homePage');
 
       it('should have a time', () => {
           const page = new HomePage();
-          expect(page.template()).toContain("11:51:48 PM");
+          expect(page.template()).toContain("23:51:48");
       });
   });  
 
