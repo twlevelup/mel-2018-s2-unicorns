@@ -20,25 +20,25 @@ describe('MedicationsPage', () => {
 
     it('should have a name', () => {
       const page = new MedicationsPage();
-      expect(page.template()).toContain("<h2>Name");
+      expect(page.template()).toContain("<h3>Name");
     });
 
     it('should have a type', () => {
       const page = new MedicationsPage();
-      expect(page.template()).toContain("<h2>Type");
+      expect(page.template()).toContain("<h3>Type");
     });
- 
+
     it('should have a dosage', () => {
       const page = new MedicationsPage();
-      expect(page.template()).toContain("<h2>Dosage");
+      expect(page.template()).toContain("<h3>Dosage");
     });
 
     it('should have a frequency', () => {
       const page = new MedicationsPage();
-      expect(page.template()).toContain("<h2>Frequency");
+      expect(page.template()).toContain("<h3>Frequency");
     });
- 
- 
+
+
   describe('#topButtonEvent', () => {
     it('goes to medical conditions page', () => {
       const props = {
