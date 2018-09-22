@@ -4,7 +4,7 @@ const notifications = [
   {
     type: "alert",
     label: "Alert",
-    defaultValue: "This is a test alert",
+    defaultValue: "This is a test",
     view: AlertNotification,
   },
   {

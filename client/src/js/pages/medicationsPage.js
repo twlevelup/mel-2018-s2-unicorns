@@ -16,7 +16,7 @@ class MedicationsPage extends BasePage {
   }
 
   rightButtonEvent() {
-    this.navigate('/');
+    this.navigate('breakfast');
   }
 
   topButtonEvent() {

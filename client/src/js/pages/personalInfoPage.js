@@ -14,7 +14,7 @@ class PersonalInfoPage extends BasePage {
   }
 
   rightButtonEvent() {
-    this.navigate('/');
+    this.navigate('breakfast');
   }
 
   bottomButtonEvent() {

@@ -14,7 +14,7 @@ class MedicalConditionsPage extends BasePage {
   }
 
   rightButtonEvent() {
-    this.navigate('/');
+    this.navigate('breakfast');
   }
 
   topButtonEvent() {
